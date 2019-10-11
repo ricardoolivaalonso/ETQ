@@ -1,0 +1,14 @@
+.is-info-visible{
+    @include flex(flex, flex-start, flex-start, column, wrap);
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    transition: .75s ease;
+}
+.is-plus-hide{
+    display: none;
+}
+.is-color-white{ color: $white; }
+.is-color-black{ color: $black;}
+.is-background-white{ background-color: rgba($white, .9);  border: 1px solid rgba($black, .1);}
+.is-background-black{ background:  $black;}

@@ -1,0 +1,32 @@
+doctype html
+html(lang="es", dir="ltr")
+    head
+        meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        meta(charset="utf-8")     
+        meta(name="author", content="Ricardo Oliva Alonso")
+        meta(name="title", content="Ricardo Oliva Alonso | Desarrollador Web | ETQ. ")
+        meta(name="description", content="Hola soy desarrollador web y esta página esta basada en ETQ. Amsterdam .")
+        meta(name="robots", content="index, follow")
+        title Ricardo Oliva Alonso | Desarrollador Web | ETQ.
+           
+        meta(name="theme-color", content="#313131")      
+        link(rel="stylesheet", href="css/styles.css")  
+        link(href="img/favicon.png", rel="shorcut icon", type="image/x-icon")
+        link(rel="stylesheet", href="css/fonts.css")  
+        script( src="js/reveal.min.js", defer)
+            
+
+    body
+        main.main#main
+            include header.pug
+            include slider.pug
+            include top.pug
+            include instagram.pug
+            include footer.pug
+    
+        script( src="js/main.js", defer)
+    
+
+
+
+    

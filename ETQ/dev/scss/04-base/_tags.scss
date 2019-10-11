@@ -1,0 +1,33 @@
+body{
+    font-family: 12px;
+    font-family: 'Graphik-400', sans-serif;
+    color: $black;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+h1{
+    font-family: 18px;
+    letter-spacing: 10px;
+    font-family: 'Graphik-600', sans-serif;
+    line-height: 1;
+}
+p{ font-weight: 400; }
+ul{ list-style: none; }
+a{
+    text-decoration: none;
+    color: $black;
+}
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { border-radius: 5px; background: $white; }
+::-webkit-scrollbar-thumb { background: darken($white, 20); }
+::-webkit-scrollbar-thumb:hover { background: darken($white, 30); }
+
+::-moz-selection {
+    background-color: $blue;
+    color: $white;
+}
+::selection {
+	background-color: $blue;
+	color: $white;
+}

@@ -1,0 +1,81 @@
+.instagram{
+    @include flex(flex, flex-start, flex-start, column, wrap);
+
+    &__container{
+        @include flex(flex, space-between, center, row, wrap);
+        width: 100%;
+        @media(min-width: $mq-2){ flex-wrap: nowrap; }
+    }
+    &__item{
+        width: calc(50vw -  #{$gap / 1.25 } );
+        height: calc(50vw - #{$gap / 1.25 } + 120px);
+        margin-bottom: $gap;
+        @media(min-width: $mq-1){
+            width: calc(25vw -  #{$gap / 1.3} );
+            height: calc(25vw - #{$gap / 1.3} + 125px);
+            margin-bottom: 0;
+        }
+        @media(min-width: $mq-1){
+            width: calc(25vw -  #{$gap / 1.15} );
+            height: calc(25vw - #{$gap / 1.15} + 125px);
+        }
+    }
+    &__img{
+        width: calc(50vw -  #{$gap / 1.25 } );
+        height: calc(50vw - #{$gap / 1.25 } );
+        margin-bottom: 20px;
+        @media(min-width: $mq-1){
+            width: calc(25vw -  #{$gap / 1.3} );
+            height: calc(25vw - #{$gap / 1.3} );
+        }
+        @media(min-width: $mq-2){
+            width: calc(25vw -  #{$gap * 1.15} );
+            height: calc(25vw - #{$gap * 1.15} );
+        }
+    }
+    &__main-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__icon{
+        object-fit: contain;
+        height: 18px;
+        width: 18px;
+        margin-right: 10px;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 2;
+        letter-spacing: .26px;
+    }
+    &__link{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2;
+        letter-spacing: 0.26px;
+    }
+    &__description{
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.26px;
+        line-height: 1.6;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media(min-width: $mq-2){
+            white-space: normal;
+            overflow: visible;
+            text-overflow: inherit;
+        }
+    }
+    &__likes{
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0.26px;
+        line-height: 2;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Graphik-400';
+    src: url('../fonts/GraphikRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Graphik-500';
+    src: url('../fonts/GraphikMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Graphik-600';
+    src: url('../fonts/GraphikSemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: block;
+}
